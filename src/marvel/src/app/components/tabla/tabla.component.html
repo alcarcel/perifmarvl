@@ -1,0 +1,12 @@
+<div class="container">    
+    <div class="card" style="width:400px" *ngFor="let tabla of caracters">
+      <img class="card-img-top" src='{{ tabla.path }} + {{ tabla.extension }}' alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">{{ tabla.name }}</h4>
+        <p class="card-text">{{ tabla.description }}</p>
+        <a href='{{ tabla.detail }}' class="btn btn-primary">Detalle</a>
+        <a href='{{ tabla.wiki }} + {{ tabla.extension }}' class="btn btn-primary">Wiki</a>
+        <a href='{{ tabla.comiclink}}' class="btn btn-primary">Comics</a>
+      </div>
+    </div>
+</div> 
